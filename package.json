@@ -1,0 +1,33 @@
+{
+  "name": "dockerized-node-app",
+  "version": "1.0.0",
+  "description": "a sample nodejs application containerized",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/vpellegrino/dockerized-node-app.git"
+  },
+  "keywords": [
+    "node",
+    "nodejs",
+    "docker",
+    "container",
+    "mongo",
+    "mongodb",
+    "express"
+  ],
+  "author": "Valentino Pellegrino",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/vpellegrino/dockerized-node-app/issues"
+  },
+  "homepage": "https://github.com/vpellegrino/dockerized-node-app#readme",
+  "dependencies": {
+    "express": "^4.17.1",
+    "mongoose": "^5.7.3",
+    "nodemon": "^1.19.3"
+  }
+}
