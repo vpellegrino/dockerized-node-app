@@ -1,7 +1,7 @@
 const mongoose = require("mongoose");
 
-const connection = "mongodb://mongo:27017/company-test";
-
-module.exports = () =>{
+module.exports = (env) =>{
+    const hostname = env === 'production' ? 'mongo' : 'localhost';
+    const connection = `mongodb://${hostname}:27017/company-test`;
     return mongoose.connect(connection);
 };

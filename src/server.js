@@ -11,9 +11,10 @@ const PORT = 8080;
 
 apiServer.listen(PORT, () => {
 
+    const env = process.env.NODE_ENV || 'dev';
     console.log(`API exposed on PORT: ${PORT}`);
 
-    dbConnection().then(() => {
+    dbConnection(env).then(() => {
         console.log("Mongo DataBase connected!")
     }).catch(e => {
         console.log(e);
